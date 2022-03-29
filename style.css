@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -32,6 +33,7 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
     color: rgb(219, 31, 31);
+    margin-bottom: 1rem;
 }
 
 .container {
@@ -61,6 +63,7 @@ h1 {
 }
 
 .logo {
+    margin-bottom: 0;
     padding: 1rem 0;
     background-color: rgb(219, 31, 31);
     text-align: center;
@@ -110,4 +113,19 @@ h1 {
 
 .divisor {
     border: thin solid rgb(219, 31, 31);
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.btn-top a {
+    font-size: 2rem;
+    color: rgb(219, 31, 31);
+}
+
+.btn-top a:hover {
+    color: rgb(177, 15, 15);
 }

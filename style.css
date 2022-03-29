@@ -17,11 +17,47 @@ a {
     text-decoration: none;
 }
 
+li {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: rgb(219, 31, 31);
+}
+
 .container {
     width: 90%;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section {
+    padding: 1.5rem 0;
+}
+
+.section p {
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+.title-section {
+    color: rgb(219, 31, 31);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content{
+    text-align: right;
 }
 
 .logo {
@@ -65,4 +101,13 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}   
+
+.divisor {
+    border: thin solid rgb(219, 31, 31);
 }

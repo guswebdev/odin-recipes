@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .logo {
     padding: 1rem 0;
     background-color: rgb(219, 31, 31);
@@ -28,4 +32,34 @@ a {
     color: white;
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: thin solid rgb(219, 31, 31);
+}
+
+.menu-item {
+    padding: 1rem;
+}
+
+.menu-item a {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.menu-item a:hover {
+    color: rgb(219, 31, 31);
+}
+
+.hero-image {
+    width: 100%;
+    min-height: calc(100vh - 180px);
+    background-image: url('https://images.pexels.com/photos/5737454/pexels-photo-5737454.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

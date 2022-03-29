@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
     margin: 0;
-    padding: 0;
     box-sizing: inherit;
 }
 
@@ -16,10 +15,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style: none;
 }
 
 .logo {
@@ -39,6 +34,7 @@ ul {
     justify-content: center;
     align-items: center;
     border-bottom: thin solid rgb(219, 31, 31);
+    list-style: none;
 }
 
 .menu-item {

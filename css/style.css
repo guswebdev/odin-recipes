@@ -13,11 +13,14 @@ html {
 
 body {
   min-height: 100vh;
-  padding: 2rem;
-  background-image: url("../img/background-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/background-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -28,11 +31,73 @@ ul {
   list-style: none;
 }
 
-.title {
-  color: crimson;
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+.header,
+.footer {
+  color: white;
+  padding: 1rem 0;
   text-align: center;
-  margin: 5rem 0;
-  font-size: 3rem;
+}
+.header {
+  font-size: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: #222;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+main .container {
+  min-height: calc(100vh - 74px - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+.title-card {
+  width: 300px;
+  background-color: rgba(34, 34, 34, 0.75);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: .5rem;
+  color: white;
 }
 
 .menu {
@@ -60,4 +125,14 @@ ul {
   color: crimson;
   background-color: white;
   border-color: white;
+}
+
+
+@media screen and (min-width: 768px){
+  .container-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
 }

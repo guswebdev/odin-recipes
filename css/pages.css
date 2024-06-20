@@ -179,6 +179,7 @@ main {
 
 .container-body-pasos li {
   font-size: 1.125rem;
+  line-height: 2rem;
 }
 
 .btn-inicio {
@@ -244,7 +245,8 @@ main {
     height: auto;
   }
 
-  .section.container-body-ingredientes {
+  .section.container-body-ingredientes,
+  .section.container-body-pasos {
     align-items: flex-start;
     justify-content: flex-start;
     padding-left: 0.825rem;

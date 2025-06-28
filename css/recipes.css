@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  padding: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+}
+
+.btn-home {
+  background-color: green;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem 0;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section {
+  margin-bottom: 1rem;
+  color: green;
+  text-align: center;
+}
+
+.title-section.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.descripcion p {
+  line-height: 1.5;
+}
+
+.ingredientes ul,
+.pasos ol {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.divisor {
+  width: 20%;
+  height: 2px;
+  background-color: green;
+  margin: 1rem auto;
+}
+
+.ingredientes ul li::marker,
+.pasos ol li::marker {
+  color: green;
+}
+.ingredientes ul li,
+.pasos ol li {
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .title-section {
+    text-align: left;
+  }
+}

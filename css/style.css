@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: green;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.divisor {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li a {
+  color: white;
+  font-size: 1.125rem;
+}
+
+li a:hover {
+  color: lightgray;
+}
+
+@media screen and (min-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .divisor {
+    display: none;
+  }
+  h1 {
+    flex-basis: 40%;
+  }
+
+  nav {
+    flex: 1;
+    width: initial;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
